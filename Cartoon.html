@@ -1,0 +1,64 @@
+<html>
+<head>
+<script type="text/javascript">
+function display_c(){
+var refresh=1000; 
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date();
+var x1= (x.getMonth()+1) +  "-" + x.getDate() + "-"+ x.getFullYear(); 
+x1 = x1 + " - " +  x.getHours()+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+document.getElementById('ct').innerHTML = x1;
+display_c();
+ }
+</script>
+
+<title> Portfolio </title>
+<style>
+.w3-tangerine {
+  font-family: "Tangerine", serif;
+}
+p { text-align:left;
+font-size: 25px;
+background: -webkit-linear-gradient(#66ff33,#ffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+h1 {
+text-align: center;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#ff1a1a,#ffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3 {text-align:right;
+font-size: 25px;}
+body
+{
+background-image: url('Cartoon.jfif');
+text-align:center;
+ background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+font-size: 40px;
+}
+</style>
+</head>
+<body>
+<h3> <button onclick="window.location.href='ModalSignup.html';"> Sign Up </button>
+<div class="w3-container w3-tangerine">
+<h1><u><br>
+Cartoon
+</u></h1>
+</div>
+<p><strong> Categories : </strong>
+<select id="select" onchange="var win = window.open(this.value, '_blank');win.focus();" >
+<option value="S">Select From The Following <br>
+<option value="Comedy.html">Comedy<br>
+<option  value="Horror.html">Horror<br>
+<option  value="Romance.html">Romance<br>
+<option  value="Fantasy.html">Fantasy<br>
+<option  value="Cartoon.html">Cartoon<br></select></p> 
+</body>
+</html>

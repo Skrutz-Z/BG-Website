@@ -1,0 +1,14 @@
+ gotta make  html file uploading all movies just like hotstar ,netlix or prime (as one may say)
+its just a 1-2 hour thing but gotta start off with this and hope to succeed in future by adding my own items with the help of various coding languages .
+ - 23rd of July,2020.
+
+
+how to connect the data base and make sure that the system remembers the login information everytime a known user 
+logs into the system.
+ - 16th of August,2020.
+
+Add Background Music.
+ - 30th January,2021.
+
+Add Timer.
+ - 02nd February,2021.

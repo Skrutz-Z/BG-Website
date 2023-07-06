@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+function display_c(){
+var refresh=1000; 
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date();
+var x1= (x.getMonth()+1) +  "-" + x.getDate() + "-"+ x.getFullYear(); 
+x1 = x1 + " - " +  x.getHours()+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+document.getElementById('ct').innerHTML = x1;
+display_c();
+ }
+</script>
+<style>
+body
+{ 
+background-image: url('Background.jpg');
+}
+h2 {text-align: center;
+font-size: 60px;
+  background: -webkit-linear-gradient(#ff1a1a,#ffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+h3 {text-align:right;
+font-size: 25px;}
+p { text-align: center-left;
+font-size: 25px;
+background: -webkit-linear-gradient(#ffffff,#ffff99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+</style>
+</head><span style="background-color:#00FEFE">
+<body onload=display_ct();>
+<span id='ct' ></span> </span>
+<h3> <button onclick="window.location.href='ModalSignup.html';"> Sign Up </button>
+<h2><br><b><u> Welcome To SZ </u></b></h2> 
+<p>
+</a><strong> Categories : </strong>
+<select id="select" onchange="var win = window.open(this.value, '_blank');win.focus();" >
+<option value="BG.html">Select From The Following <br>
+<option value="Comedy.html">Comedy<br>
+<option  value="Horror.html">Horror<br>
+<option  value="Romance.html">Romance<br>
+<option  value="Fantasy.html">Fantasy<br>
+<option  value="Cartoon.html">Cartoon<br></select></p> 
+<audio src="E:\Movies\BGmusic.mp3" controls>
+</audio>
+</body>
+</html>
+
+
+
